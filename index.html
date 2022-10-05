@@ -13,19 +13,21 @@
 <body>
     <header id="header" class="header-background-image">
         <nav class="nav nav-top">
-          <img class="logo" src="images/Logo.jpg" alt="The Reel Dr. Logo">
           <ul class="nav-list">
             <li><a href="#header">HOME</a></li>  
             <li><a href="#services-link">SERVICES</a>
             <li><a href="#contact">CONTACT</a></li>
-            <li><a class="hidden" href="#about">ABOUT</a></li>
+            <li><a href="#about">ABOUT</a></li>
           </ul>
         </nav>
+        <img class="logo" src="images/Logo.jpg" alt="The Reel Dr. Logo">
+
+        <!-- Not using this code until we have enough media to create a multi page website
         <h1 class="title">The Reel Dr.</h1>
         <Span id="services-link" class="sub-title">Cleaning, Service, & Repair</Span>
-        <!-- <a class="btn" href="#services">Learn More</a> -->
+        <a class="btn" href="#services">Learn More</a> -->
     </header>
-    <main>
+    <main id="services-link">
         <section id="services" class="section">
           <h2 class="section-title">Services</h2>
               <!-- Service 1 -->
@@ -101,7 +103,7 @@
           </div>
           <!-- Matt / Chuker -->
           <div id="contact" class="about-grid-item">
-            <img src="thereeldr-pics/bald-guy.jpg" alt="The Bald Guy Pic">
+            <img class="bald-guy-img" src="thereeldr-pics/bald-guy.jpg" alt="The Bald Guy Pic">
               <p>I'm the bald guy and a jack of many trades. I've spent the last ten years as a diesel mechanic and love tinkering and fixing things. Recently, I needed to pivot out of heavy mechanics and partnered with The Reel Dr. to create this website and fix fishing reels.</p>
           </div>
         </div>
@@ -126,7 +128,7 @@
     </main>
     <footer>
         <div class="footer-container">
-          <img class="logo" src="images/Logo.jpg" alt="The Reel Dr. Logo">
+          <img class="footer-logo hidden" src="images/Logo.jpg" alt="The Reel Dr. Logo">
           <p class="footer-closer">&copy;2022 The Reel Dr.</p> <p class="hidden">Website by: Matthew Higgins</p>
       </div>
       </footer>
