@@ -98,7 +98,11 @@
     background-color: hsl(200, 100%, 40%);
   }
 
-  @media (min-width: 475px) and (max-width: 549.08px) {
+  @media (min-width: 275px) and (max-width: 549.08px) {
+    .nav {
+      justify-content: center;
+    }
+
     .nav-list a {
       font-size: 14px;
     }
@@ -342,6 +346,7 @@
   .about-grid-item {
     display: flex;
     align-items: center;
+    padding-left: 10px;
   }
   
   .about-grid-item img {
@@ -427,8 +432,7 @@
     display: flex;
   }
 
-
-  @media (max-width: 550px) {
+  @media (min-width: 275px) and (max-width: 749.08px) {
     .hidden {
         display: none;
     }
