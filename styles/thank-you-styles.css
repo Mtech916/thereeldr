@@ -49,7 +49,7 @@ body {
 
   @media (min-width: 275px) and (max-width: 550px) {
     .company-logo {
-      height: 18vh;
+      height: 13vh;
     }
 
     .thank-you-msg {
