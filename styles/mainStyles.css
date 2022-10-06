@@ -353,12 +353,15 @@
   
   .about-grid-item img {
     width: 205px;
-    padding-right: 10px;
-    /* margin-right: 1rem; */
+    /* padding-right: 10px; */
+    border-radius: 15px;
+    margin-right: 10px;
   }
 
   .about-grid-item .bald-guy-img {
     height: 205px;
+    border-radius: 15px;
+    margin-right: 10px;
   }
 
   .about-section {
