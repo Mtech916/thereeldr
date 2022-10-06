@@ -24,7 +24,7 @@ body {
     
   }
 
-  .thank-you-container .thank-you-msg {
+  .thank-you-msg {
     font-size: 3em;
   }
 
@@ -47,9 +47,17 @@ body {
     margin-right: 10px;
   }
 
-  @media (max-width: 550px) {
+  @media (min-width: 275px) and (max-width: 550px) {
     .company-logo {
-        height: 18vh;
+      height: 18vh;
+    }
+
+    .thank-you-msg {
+      font-size: 2.25em;
+    }
+
+    .contact-item img {
+      width: 30px;
     }
   }
 
@@ -57,10 +65,22 @@ body {
     .company-logo {
         height: 21vh;
     }
+
+    .thank-you-msg {
+      font-size: 2.5em;
+    }
+
+    .contact-item img {
+      width: 40px;
+    }
 }
 
   @media (min-width: 750.02px) and (max-width: 900px){
     .company-logo {
         height: 25vh;
     }
+    .thank-you-msg {
+      font-size: 2.75em;
+    }
+
   }
