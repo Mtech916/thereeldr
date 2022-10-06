@@ -247,6 +247,7 @@
 .portfolio-grid-container img {
     border: 1px solid white;
     max-width: 100%;
+    border-radius: 15px;
 }
 
 .portfolio-grid-container .rusty-img, 
