@@ -379,22 +379,20 @@
     padding-left: 10px;
   }
   
-  .about-grid-item img {
-    width: 205px;
-    /* padding-right: 10px; */
+  .trd-profile-pic {
+    height: 225px;
+    border-radius: 25px;
+  }
+
+  .bald-guy-img {
+    width: 110px;
     border-radius: 15px;
-    margin-right: 10px;
   }
 
   .about-grid-item p {
     line-height: 1.5;
     margin-right: 10px;
-  }
-
-  .about-grid-item .bald-guy-img {
-    height: 205px;
-    border-radius: 15px;
-    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .about-section {
