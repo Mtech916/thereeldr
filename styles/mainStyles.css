@@ -176,6 +176,33 @@
     margin-right: 1rem;
   }
 
+  .services-reel-diagram {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 450px));
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 50px;
+    margin-top: 10px;
+  }
+
+  .services-reel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-spin-reel-diagram {
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 3px 5px .7em whitesmoke;
+  }
+
+  .casting-reel-diagram {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 3px 5px .7em whitesmoke;
+  }
+
   .standouts {
     font-weight: bold;
   }
