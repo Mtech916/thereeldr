@@ -386,6 +386,11 @@
     margin-right: 10px;
   }
 
+  .about-grid-item p {
+    line-height: 1.5;
+    margin-right: 10px;
+  }
+
   .about-grid-item .bald-guy-img {
     height: 205px;
     border-radius: 15px;
