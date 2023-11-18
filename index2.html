@@ -16,9 +16,94 @@
   <title>The Reel Dr.</title>
 </head>
 <body>
-  <h1> <i class="fas fa-star"></i> The Reel Dr.</h1>
-  <button class="btn btn-primary">Submit</button>
+  <nav class="navbar navbar-expand-md sticky-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="images/Logo.jpg" alt="Company Logo" width="175" class="rounded-3">
+      </a>
+      <button 
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#solutions">Solutions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#details">Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+        </ul>
+        <span class="nav-item">
+          <span class="fa-stack">
+            <a href="https://facebook.com" target="_blank">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+            </a>
+          </span>
+          <span class="fa-stack">
+            <a href="https://twitter.com" target="_blank">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-instagram fa-stack-1x text-white"></i>
+            </a>
+          </span>
+        </span>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Header -->
+  <header class="header position-relative">
+    <img src="images/vertical-decoration-left.svg" alt="decoration on left" class="vertical-decoration position-absolute d-none d-md-block">
+    <div class="container hero-intro">
+      <div class="row">
+        <div class="col-md-6 pt-5">
+          <h1 class="xl-text fw-bold position-relative mt-5">
+            Reel Solutions For Your Next Fishing Adventure <span class="text-bg-primary rounded-3 px-1 replace-me">Cleaning, Service, Repair</span>
+          </h1>
+          <p class="lead position-relative text-white-50">
+            Boost your fishing experience with best in class reel solutions tailored
+            to fit your needs and fishing style.
+          </p>
+          <a href="#" class="btn btn-secondary text-white">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Affiliates -->
+  <section class="affiliates py-4 overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <h6 class="text-center mb-4 text-uppercase">Our Partners</h6>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <button id="to-top" class="to-top-btn">
+    <img src="images/up-arrow.png" alt="">
+  </button>
+
+  <script src="js/replaceme.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
