@@ -1,6 +1,15 @@
 .xl-text {
-  font-size: 53px;
+  font-size: 60px;
   color: #fff;
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-sticky {
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .header {
@@ -20,13 +29,14 @@
   width: 24px;
 }
 
-.navbar {
-  transition: all 0.5s ease-in-out;
-}
-
-.navbar-sticky {
-  opacity: 0.9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.hr-heading {
+  display: inline-block;
+  width: 3.5rem;
+  height: 0.125rem;
+  margin-top: 0.625rem;
+  border: none;
+  background-color: var(--bs-primary);
+  opacity: 1;
 }
 
 .to-top-btn {
@@ -56,4 +66,14 @@
 
 .show {
   opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .xl-text {
+    font-size: 43px;
+  }
+  .header {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../images/header.jpg") center center no-repeat;
+  }
 }

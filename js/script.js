@@ -33,4 +33,11 @@ function userScroll() {
   });
 }
 
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+// Event Listeners
 document.addEventListener('DOMContentLoaded', userScroll);
+document.querySelector('#to-top').addEventListener('click', scrollToTop);
