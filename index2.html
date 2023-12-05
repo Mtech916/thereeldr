@@ -38,7 +38,7 @@
             <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#solutions">Solutions</a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#details">Details</a>
@@ -147,16 +147,16 @@
         <div class="col-md-5 offset-md-1">
           <form>
             <div class="mb-4">
-              <input type="text" class="form-control bg-secondary" placeholder="Enter name">
+              <input type="text" class="form-control text-bg-secondary" placeholder="Enter name">
             </div>
             <div class="mb-4">
-              <input type="email" class="form-control bg-secondary" placeholder="Enter email">
+              <input type="email" class="form-control text-bg-secondary" placeholder="Enter email">
             </div>
             <div class="mb-4">
-              <input type="text" class="form-control bg-secondary" placeholder="Enter phone">
+              <input type="text" class="form-control text-bg-secondary" placeholder="Enter phone">
             </div>
             <div class="mb-4">
-              <select name="interested" id="interested" class="form-control bg-secondary">
+              <select name="interested" id="interested" class="form-control text-bg-secondary">
                 <option>Interested In...</option>
                 <option value="cleaning">Cleaning</option>
                 <option value="service">Service</option>
@@ -167,7 +167,7 @@
             <div class="mb-4 form-check">
               <input type="checkbox" id="agree-check">
               <label for="agree-check" class="form-check-label">
-                I understand <a href="#">Terms and Conditions</a> may apply.
+                I understand the <a href="#">Terms and Conditions</a>.
               </label>
             </div>
             <div class="d-grid gap-2">
@@ -179,97 +179,249 @@
     </div>
   </section>
 
-  <!-- Solutions -->
-  <section id="solutions" class="solutions my-5">
-    <div class="container">
+  <!-- Reviews -->
+  <section id="reviews" class="reviews my-5 position-relative">
+    <div class="container position-relative">
       <div class="row mb-4">
-        <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
-          <h5><span class="badge bg-primary text-uppercase">Solutions</span></h5>
-          <h2 class="fw-bold">
-            The Dr. Provides Accelerated Reel Solutions
+        <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center pt-4">
+          <h5><span class="badge bg-primary text-uppercase">Reviews</span></h5>
+          <h2 class="fw-bold text-white">
+            What our Clients Say ...
           </h2>
         </div>
       </div>
-
-      <!-- Solutions Row 1 -->
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <div class="card bg-secondary">
-            <img src="images/test-1.jpg" alt="Service Example" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Cleaning</h5>
-              <p class="card-text">
-                Our ERP software solution streamlines your business processes and
-                enhances operational efficiency. With integrated modules for
-                finance, human resources, and more, you can make data-driven
-                decisions.
-              </p>
-              <div class="badge bg-primary p-2 text-uppercase">
-                Maintanence
+      <div class="row mb-4">
+        <div class="col-12">
+          <div id="quotes-carousel" class="carousel slide text-white" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <blockquote class="text-center rounded-3">
+                  <q>Yippee-ki-yay, this cowboy just played Anagram Hunt.<br>
+                    It's the best game ever invented!</q>
+                  <p class="fw-bold text-secondary text-uppercase pt-2 q-name">John McClane</p>
+                </blockquote>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="card bg-secondary">
-            <img src="images/service_example.jpg" alt="Cleaning Example" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Service</h5>
-              <p class="card-text">
-                Our CRM software solution helps you build stronger customer
-                relationships and drive sales growth. Manage leads, track
-                interactions, and deliver personalized experiences to maximize
-                customer satisfaction and loyalty.
-              </p>
-              <div class="badge bg-dark p-2 text-uppercase">
-                Functionality
+              <div class="carousel-item">
+                <blockquote class="text-center rounded-3">
+                  <q>It was more fun playing your games than filming all my awesome movies!</q>
+                  <p class="fw-bold text-secondary text-uppercase pt-2 q-name">John Wick</p>
+                </blockquote>
+              </div>
+              <div class="carousel-item">
+                <blockquote class="text-center rounded-3">
+                  <q>Play2Learn called me and asked, Want to play a game?<br>I responded: Joshua is that you?<br>Computer: No, its Math Facts Practice...Dun dun duuun!</q>
+                  <p class="fw-bold text-secondary text-uppercase pt-2 q-name">David Lightman</p>
+                </blockquote>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Solutions Row 2 -->
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <div class="card bg-secondary">
-            <img src="images/repair_example.jpg" alt="Repair Example" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Repairs</h5>
-              <p class="card-text">
-                Our SFA software solution empowers your sales team with the tools
-                they need to drive revenue growth. Streamline sales processes,
-                track performance, and enhance collaboration to close deals
-                faster.
-              </p>
-              <div class="badge bg-primary p-2 text-uppercase">
-                Broken Components
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="card bg-secondary">
-            <img src="images/custom_example.jpg" alt="Custom Repair Example" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Custom Repairs</h5>
-              <p class="card-text">
-                Our WMS software solution optimizes your warehouse operations and
-                improves inventory management. Gain real-time visibility, automate
-                processes, and reduce costs to ensure efficient logistics.
-              </p>
-              <div class="badge bg-dark p-2 text-uppercase">
-                Major Repairs
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
+
+  <!-- Service Descriptions -->
+  <section id="services" class="services my-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
+          <h5><span class="badge bg-primary text-uppercase">Services</span></h5>
+          <h2 class="fw-bold">
+            The Dr. Provides Accelerated Reel Solutions
+          </h2>
+          <small>Click each card for more details</small>
+        </div>
+      </div>
+
+      <!-- Services Row 1 -->
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="card text-bg-info">
+            <a 
+              data-bs-toggle="modal"
+              data-bs-target="#modal1"
+            >
+            <img src="images/test-1.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <p>
+                <span class="fw-bold text-secondary">Cleaning</span> - Creating an optimal environment for all components
+              </p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="card text-bg-info">
+            <a 
+              data-bs-toggle="modal"
+              data-bs-target="#modal2"
+            >
+            <img src="images/service_example.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <p>
+                <span class="fw-bold text-secondary">Maintanence</span> - Replacing components due to wear & tear 
+              </p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="card text-bg-info">
+            <a 
+              data-bs-toggle="modal"
+              data-bs-target="#modal3"
+            >
+            <img src="images/repair_example.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <p>
+                <span class="fw-bold text-secondary">Repairs</span> - Repairing or replacing broken & damaged components
+              </p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="card text-bg-info">
+            <a 
+              data-bs-toggle="modal"
+              data-bs-target="#modal4"
+            >
+            <img src="images/custom_example.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <p>
+                <span class="fw-bold text-secondary">Customized</span> - Repairing and or Fabricating hard to find components
+              </p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Modals -->
+  <div class="services-modals">
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal fade">
+      <div class="modal-dialog modal-lg mt-7">
+        <div class="modal-content text-bg-info p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/test-1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-secondary">Cleaning</h3>
+              <p>
+                Keeping the internal moving parts of your reel clean and lubed 
+                ensures longer last parts. That means you spend less and take 
+                more time fishing.
+              </p>
+              <p>
+                So creating an optimal environment for all your components is 
+                essential.
+              </p>
+              <!-- <a href="/index2.html#contact" class="btn btn-primary text-white">
+                Inquire
+              </a> -->
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal fade">
+      <div class="modal-dialog modal-lg mt-7">
+        <div class="modal-content text-bg-info p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/service_example.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-secondary">Maintenance</h3>
+              <p>
+                Sometimes, cleaning isn't enough and after a cleaning we may find
+                that some but not of your components new replacing or extra 
+                attention.
+              </p>
+              <p>
+                In this case, we are able to replace components due to wear and tear
+                from the elements.
+              </p>
+              <!-- <a href="#contact" class="btn btn-primary text-white">
+                Inquire
+              </a> -->
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal fade">
+      <div class="modal-dialog modal-lg mt-7">
+        <div class="modal-content text-bg-info p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/repair_example.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-secondary">Repairs</h3>
+              <p>
+                Repairs are needs due to lack of cleaning and maintanence. If your 
+                last fishing adventure resulted in some damage to the housing or 
+                internal components, we have you covered.
+              </p>
+              <p>
+                Repairing and or replacing broken and damaged components takes time
+                and patience.
+              </p>
+              <!-- <a href="#contact" class="btn btn-primary text-white">
+                Inquire
+              </a> -->
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal fade">
+      <div class="modal-dialog modal-lg mt-7">
+        <div class="modal-content text-bg-info p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/custom_example.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-secondary">Customized Repairs</h3>
+              <p>
+                Even if you've done all you need, cleaning, maintenance, and repairs. 
+                Sometimes, we find not all components are available for replacement and
+                that's where we shine.
+              </p>
+              <p>
+                The Reel Dr. specializes in customized repairs to keep your favorite
+                reel working optimally.
+              </p>
+              <!-- <a href="#contact" class="btn btn-primary text-white">
+                Inquire
+              </a> -->
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   <!-- Details 1 -->
     <section id="details" class="details my-5 position-relative">
@@ -469,6 +621,223 @@
         </div>
       </div>
     </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing my-6 position-relative">
+      <div class="container position-relative">
+        <div class="row mb-4">
+          <div class="col-md-6 offset-md-3 d-flex flex-column align-items center text-center">
+            <h5 class="mt-4">
+              <span class="badge bg-primary rounded-3 text-uppercase">
+                Pricing
+              </span>
+            </h5>
+            <h2 class="fw-bold text-secondary">
+              Flexible Pricing Options
+            </h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Pricing Col 1 -->
+          <div class="col-md-3">
+            <div class="card text-bg-info text-center rounded-0">
+              <div class="card-body">
+                <div class="xl-text fw-bold">$40</div>
+                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
+                  Freshwater
+                </h4>
+                <p>
+                  Our freshwater pricing indcludes:
+                </p>
+                <ul class="list-unstyled lh-lg mt-5">
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Teardown
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    &
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Diagnosis
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Recommended Repairs & Upgrades
+                  </li>
+                </ul>
+                <a href="#contact" class="btn btn-primary text-white mt-6 fw-bold">
+                  Inquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing Col 2 -->
+          <div class="col-md-3">
+            <div class="card text-bg-info text-center rounded-0">
+              <div class="card-body">
+                <div class="xl-text fw-bold">$50</div>
+                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
+                  Saltwater
+                </h4>
+                <p>
+                  Our Saltwart pricing includes:
+                </p>
+                <ul class="list-unstyled lh-lg mt-5">
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Teardown 
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Diagnosis
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Additional cleaning from Saltwater wear and tear
+                  </li>
+                </ul>
+                <a href="#contact" class="btn btn-primary text-white mt-6 fw-bold">
+                  Inquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing Col 3 -->
+          <div class="col-md-3">
+            <div class="card text-bg-info text-center rounded-0 mb-4">
+              <div class="card-body">
+                <div class="xl-text fw-bold">$TBD</div>
+                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
+                  Plus Parts
+                </h4>
+                <p>
+                  We source our parts from:
+                </p>
+                <ul class="list-unstyled lh-lg mt-5">
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Our own inventory
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Perferred Vendors
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Even Hard to find parts
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Custom Modification may be available too
+                  </li>
+                </ul>
+                <a href="#contact" class="btn btn-primary text-white mt-6 fw-bold">
+                  Inquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects my-6">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
+            <h5>
+              <span class="badge bg-primary rounded-3 text-uppercase">
+                Projects
+              </span>
+            </h5>
+            <h2 class="fw-bold">Project's We are Proud Of</h2>
+            <p>
+              We take pride in our successful projects and the value they bring to
+              our fellow fisherman. With our expertise and dedication, we have delivered
+              exceptional results. Here are some highlights
+            </p>
+          </div>
+        </div>
+        <div class="container d-flex overflow-hidden">
+              <div class="panel active" style="background-image: url('./images/example-1.jpg');">
+                <h3 class="text-bg-secondary fw-bold rounded-3 px-2">Casting Reel</h3>
+              </div>
+
+              <div class="panel" style="background-image: url('./images/example-2.jpg');">
+                <h3 class="text-bg-secondary fw-bold rounded-3 px-2">Better Casting Reel</h3>
+              </div>
+
+              <div class="panel" style="background-image: url('./images/example-2a.JPG');">
+                <h3 class="text-bg-secondary fw-bold rounded-3 px-2">Gear Cleaning</h3>
+              </div>
+          
+              <div class="panel" style="background-image: url('./images/example-2b.jpg');">
+                <h3 class="text-bg-secondary fw-bold rounded-3 px-2">Rebuild Phase</h3>
+              </div>
+          
+              <div class="panel" style="background-image: url('./images/open-reel-gears.jpg');">
+                <h3 class="text-bg-secondary fw-bold rounded-3 px-2">Lubed Gears</h3>
+              </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-bg-info py-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 d-flex justify-content-center my-3">
+            <img src="./thereeldr-pics/trd-trophies.jpg" alt="The Reel Dr. Himself" id="trd" class="img-fluid rounded-3">
+          </div>
+          <div class="col-md-4 my-3">
+            <h6 class="text-secondary fw-bold">About The Reel Dr.</h6>
+            <p class="lead">
+              Established in 1991, I started this business after taking my reels to a local fishing store to get serviced, they would work great for a few hours and then I'd experience the same issues. So, I decided I would learn how to do it myself and have been working on reels ever since. Fishing is in my blood!
+            </p>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="mb-3">
+              <h6 class="text-secondary fw-bold">Social & Email Contact</h6>
+              <a href="#" class="text-decoration-none">
+                <i class="fab fa-facebook fa-3x text-light mx-2"></i>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <i class="fab fa-twitter fa-3x text-light mx-2"></i>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <i class="fab fa-instagram fa-3x text-light mx-2"></i>
+              </a>
+            </div>
+            <p>
+              We would love to hear from you
+            </p>
+            <p>
+              <span class="pe-2"><i class="fa-regular fa-envelope"></i>
+              </span> <a href="mailto:thereeldr@yahoo.com"
+              ><strong>thereeldr@yahoo.com</strong></a
+              >
+            </p>
+            <p class="mb-5">
+              <span class="pe-2"><i class="fa-regular fa-phone"></i>
+              </span> <a href="tel:9163507116">&#40;916&#41; 350 - 7116</a>
+            </p>
+
+            <h6 class="text-secondary fw-bold">Other Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                Important: <a href="#">Terms & Conditions</a>,
+                <a href="privacy.html">Privacy Policy</a>
+              </li>
+              <li>
+                Useful: <a href="index2.html#pricing">Pricing</a>
+              </li>
+              <li>
+                Menu: <a href="index2.html">Home</a>, <a href="index2.html#details">Details</a>,
+                <a href="index2.html#services">Services</a>,
+                <a href="index2.html#projects">Projects</a>
+              </li>
+            </ul>
+            
+          </div>
+
+      </div>
+     </footer>
 
   <button id="to-top" class="to-top-btn">
     <img src="images/up-arrow.png" alt="Up Arrow Decoration">

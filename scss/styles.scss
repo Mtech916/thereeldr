@@ -78,6 +78,11 @@
     opacity: 1;
   }
 
+  .services-modals .modal-dialog {
+    max-width: 1150px;
+    margin-top: 130px;
+  }
+
   // Video Play Button
   .video-play-button {
     position: absolute;
@@ -155,6 +160,74 @@
   .video-modal .modal-dialog {
     max-width: 1150px;
     margin-top: 20px;
+  }
+
+  #pricing,
+  #reviews {
+    background: url('../images/header.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #pricing::after,
+  #reviews::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+
+  #pricing .container,
+  #reviews .container {
+    z-index: 10;
+  }
+
+  // Expanding Cards
+  .panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+  }
+  
+  .panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .panel.active {
+    flex: 5;
+  }
+  
+  .panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
+
+  #trd {
+    height: 450px;
+  }
+
+  @media (max-width: 480px) {
+    
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+      display: none;
+    }
   }
 
   @media(max-width: 992px) {
