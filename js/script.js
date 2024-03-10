@@ -46,6 +46,9 @@ function insertForm() {
           <input type="hidden" name="_autoresponse" value="Thank you for submitting a Review. We've received your message and will contact you within 24 business hours.">
           <input type="hidden" name="_template" value="table">
         </div>
+        <div class="mb-4">
+          <input type="text" name="receipt" class="form-control text-bg-secondary" placeholder="Enter Receipt Number">
+        </div>
         <textarea name="message" id="message" class="form-control text-bg-secondary" rows="10" placeholder="Enter your review here..." required></textarea>
         <div class="d-grid gap-2 pt-4">
           <button type="submit" class="btn btn-lg btn-primary text-white">
