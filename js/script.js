@@ -35,7 +35,7 @@ function insertForm() {
   const reviewForm = document.getElementById('review-form');
 
   reviewForm.innerHTML = `
-      <form action="https://formsubmit.co/thereeldr@yahoo.com" method="POST">
+      <form action="https://formsubmit.co/thereeldr49@gmail.com" method="POST">
         <div class="mb-4">
           <input type="text" name="name" class="form-control text-bg-secondary" placeholder="Enter name" required>
         </div>
