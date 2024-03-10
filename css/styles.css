@@ -13,7 +13,7 @@
 }
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/header.jpg") left center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/decorations/header.jpg") left center no-repeat;
   background-size: cover;
   height: 600px;
 }
@@ -72,6 +72,10 @@
 
 .show {
   opacity: 1;
+}
+
+.pointer:hover {
+  cursor: pointer;
 }
 
 .services-modals .modal-dialog {
@@ -154,9 +158,13 @@
   margin-top: 20px;
 }
 
+#reviews {
+  height: 60vh;
+}
+
 #pricing,
 #reviews {
-  background: url("../images/header.jpg") center center no-repeat;
+  background: url("../images/decorations/header.jpg") center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -213,18 +221,16 @@
   height: 450px;
 }
 
-@media (max-width: 480px) {
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
-    display: none;
-  }
-}
 @media (max-width: 992px) {
   .xl-text {
     font-size: 43px;
   }
   .header {
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../images/header.jpg") center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../images/decorations/header.jpg") center center no-repeat;
+  }
+  .panel:nth-of-type(1),
+  .panel:nth-of-type(5) {
+    display: none;
   }
 }

@@ -11,36 +11,65 @@ if (checkReplace != null) {
   });
 }
 
-// User Scroll For Navbar
-function userScroll() {
-  const navbar = document.querySelector('.navbar');
-  const toTopBtn = document.querySelector('#to-top');
+// Form Switcher
+const contactFrmBtn = document.querySelector('#contact-frm-btn');
+const reviewFrmBtn = document.querySelector('#review-frm-btn');
+const inquireButtons = document.querySelectorAll('.inquire');
+const contactFrmLink = document.querySelector('.contact-frm-link');
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      navbar.classList.add('bg-light');
-      navbar.classList.add('border-bottom');
-      navbar.classList.add('border-secondary');
-      navbar.classList.add('navbar-sticky');
-      toTopBtn.classList.add('show');
-    } else {
-      navbar.classList.remove('bg-light');
-      navbar.classList.remove('border-bottom');
-      navbar.classList.remove('border-secondary');
-      navbar.classList.remove('navbar-sticky');
-      toTopBtn.classList.remove('show');
-    }
-  });
+function switchForm(e) {
+  const contactSection = document.querySelector('#contact');
+  const reviewSection = document.querySelector('#review');
+
+  contactFrmBtn.classList.toggle('opacity-25');
+  reviewFrmBtn.classList.toggle('opacity-25');
+  contactSection.classList.toggle('d-none');
+  reviewSection.classList.toggle('d-none');
+
+  if (!reviewSection.classList.contains('d-none')) {
+    insertForm();
+  }
 }
 
-function scrollToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+function insertForm() {
+  const reviewForm = document.getElementById('review-form');
+
+  reviewForm.innerHTML = `
+      <form action="https://formsubmit.co/thereeldr@yahoo.com" method="POST">
+        <div class="mb-4">
+          <input type="text" name="name" class="form-control text-bg-secondary" placeholder="Enter name" required>
+        </div>
+        <div class="mb-4">
+          <input type="email" name="email" class="form-control text-bg-secondary" placeholder="Enter email" required>
+          <input type="hidden" name="_next" value="https://thereeldr.com/pages/thank-you.html">
+          <input type="hidden" name="_subject" value="New Contact Form Submission!">
+          <input type="hidden" name="_template" value="table">
+        </div>
+        <div class="mb-4">
+          <input type="text" name="reciept" class="form-control text-bg-secondary" placeholder="Enter Reciept Number">
+        </div>
+        <textarea name="customer-review" id="customer-review" class="form-control text-bg-secondary" rows="10" placeholder="Enter your review here..."></textarea>
+        <div class="d-grid gap-2 pt-4">
+          <input type="submit" value="Submit" class="btn btn-lg btn-primary text-white">
+        </div>
+      </form>
+    `;
 }
 
-// Event Listeners
-document.addEventListener('DOMContentLoaded', userScroll);
-document.querySelector('#to-top').addEventListener('click', scrollToTop);
+function clickContactFrmBtn() {
+  if (document.querySelector('#contact').classList.contains('d-none')) {
+    contactFrmBtn.click();
+    return;
+  }
+  return;
+}
+
+inquireButtons.forEach((button) => {
+  button.addEventListener('click', clickContactFrmBtn);
+});
+contactFrmLink.addEventListener('click', clickContactFrmBtn);
+contactFrmBtn.addEventListener('click', switchForm);
+reviewFrmBtn.addEventListener('click', switchForm);
 
 // Video Modal
 const videoBtn = document.querySelector('.video-btn');
@@ -67,6 +96,7 @@ if (videoModal !== null) {
   });
 }
 
+// Project Panels effect
 const panels = document.querySelectorAll('.panel');
 const removeActiveClasses = () => {
   panels.forEach((panel) => {

@@ -1,8 +1,8 @@
 {
   "name": "thereeldr",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Fresh New Reel",
-  "main": "index.js",
+  "main": "js/script.js",
   "scripts": {
     "sass:build": "sass --no-source-map scss:css",
     "sass:watch": "sass --no-source-map --watch scss:css"
