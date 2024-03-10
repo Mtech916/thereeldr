@@ -46,9 +46,9 @@ function insertForm() {
           <input type="hidden" name="_template" value="table">
         </div>
         <div class="mb-4">
-          <input type="text" name="reciept" class="form-control text-bg-secondary" placeholder="Enter Reciept Number">
+          <input type="text" name="reciept" class="form-control text-bg-secondary" placeholder="Enter Reciept Number" required>
         </div>
-        <textarea name="customer-review" id="customer-review" class="form-control text-bg-secondary" rows="10" placeholder="Enter your review here..."></textarea>
+        <textarea name="customer-review" id="customer-review" class="form-control text-bg-secondary" rows="10" placeholder="Enter your review here..." required></textarea>
         <div class="d-grid gap-2 pt-4">
           <input type="submit" value="Submit" class="btn btn-lg btn-primary text-white">
         </div>
