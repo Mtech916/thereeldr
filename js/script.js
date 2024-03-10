@@ -48,6 +48,9 @@ function insertForm() {
         </div>
         <textarea name="message" id="message" class="form-control text-bg-secondary" rows="10" placeholder="Enter your review here..." required></textarea>
         <div class="d-grid gap-2 pt-4">
+          <button type="submit" class="btn btn-lg btn-primary text-white">
+            Submit
+          </button>
           <input type="submit" value="Submit" class="btn btn-lg btn-primary text-white">
         </div>
       </form>

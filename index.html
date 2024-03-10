@@ -170,10 +170,16 @@
               <input type="hidden" name="_template" value="table">
             </div>
             <div class="mb-4">
-              <textarea name="message" id="message" class="form-control text-bg-secondary" rows="10" placeholder="Please Include: Phone Number and indicate if you are interested in Cleaning, Service, Repair, or Custom Repair" required></textarea>
+              <select name="message" id="interested" class="form-control text-bg-secondary" required>
+                <option>Interested In...</option>
+                <option value="cleaning">Cleaning</option>
+                <option value="service">Service</option>
+                <option value="repair">Repair</option>
+                <option value="custom">Custom Request</option>
+              </select>
             </div>
             <div class="mb-4 form-check">
-              <input type="checkbox" name="checkbox" id="agree-check">
+              <input type="checkbox" name="checkbox" id="agree-check" required>
               <label for="agree-check" class="form-check-label">
                 I understand the <a data-bs-toggle="modal"
                 data-bs-target="#modalterms" class="text-primary pointer">
