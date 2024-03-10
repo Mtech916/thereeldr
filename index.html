@@ -1,149 +1,985 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Reel Dr.</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/mainStyles.css">
-    <!-- Google tag (gtag.js) --> 
-<!--     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4M6E0H5Y9Y"></script> 
-    <script> 
-        window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-4M6E0H5Y9Y');           </script> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/replaceme.min.js" defer></script>
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/pageNav.js" defer></script>
+  <link rel="icon" href="images/logos/Logo(trademark).jpg">
+  <title>The Reel Dr.</title>
 </head>
 <body>
-    <header id="header" class="header-background-image">
-        <nav class="nav nav-top">
-          <ul class="nav-list">
-            <li><a href="#header">HOME</a></li>  
-            <li><a href="#services-link">SERVICES</a>
-              <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
-        <img class="logo" src="images/Revised-logo.jpg" alt="The Reel Dr. Logo">
+  <nav id="mainNavbar" class="navbar navbar-expand-md sticky-top">
+    <div class="container">
+      <a href="/" class="navbar-brand">
+        <img src="images/logos/Logo(trademark).jpg" alt="Company Logo" width="175" class="rounded-3">
+      </a>
+      <button 
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#details">Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+        </ul>
+        <span class="nav-item">
+          <span class="fa-stack">
+            <a href="https://www.facebook.com/thereeldr" target="_blank">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+            </a>
+          </span>
+          <span class="fa-stack">
+            <a href="https://www.instagram.com/imjmbnd007/" target="_blank">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-instagram fa-stack-1x text-white"></i>
+            </a>
+          </span>
+        </span>
+      </div>
+    </div>
+  </nav>
 
-        <!-- Not using this code until we have enough media to create a multi page website
-        <h1 class="title">The Reel Dr.</h1>
-        <Span id="services-link" class="sub-title">Cleaning, Service, & Repair</Span>
-        <a class="btn" href="#services">Learn More</a> -->
-    </header>
-    <main id="services-link">
-        <section id="services" class="section">
-          <h2 class="section-title">Services</h2>
-              <!-- Service 1 -->
-          <div class="services-grid">
-            <div class="services-grid-item">
-              <img class="services-icons" src="repair-icons/gear-wrench-icon.webp" alt="Maintanence Icon">
-                <p>Quality fishing reel <span class="standouts">cleaning, service and  repair&#58;</span> includes a complete teardown to frame, then all parts are cleaned and lubricated as your reel is rebuilt.</p>
+  <!-- Header -->
+  <header class="header position-relative">
+    <img src="images/decorations/vertical-decoration-left.svg" alt="decoration on left" class="vertical-decoration position-absolute d-none d-md-block">
+    <div class="container hero-intro">
+      <div class="row">
+        <div class="col-md-6 pt-3">
+          <h1 class="xl-text fw-bold position-relative mt-md-5">
+            Reel Solutions For Your Next Fishing Adventure <br> <span class="text-bg-primary rounded-3 px-1 replace-me">Cleaning, Service, Repair</span>
+          </h1>
+          <p class="lead position-relative text-white-50">
+            Boost your fishing experience with best in class reel solutions tailored
+            to fit your needs and fishing style.
+          </p>
+          <a href="#services" class="btn btn-secondary text-white">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Partners -->
+  <section class="partners py-4 overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center mb-4"><span class="badge bg-primary text-uppercase">Our Partners</span></h2>
+          <div class="row py-md-5">
+            <div class="col-md-4 text-center py-3">
+              <a href="https://www.fishermanswarehouse.com/" target="_blank">
+                <img src="images/logos/fishermans_warehouse_250.jpg" alt="Fishermans Warehouse Logo" class="img-fluid">
+              </a>
             </div>
-            <!-- Service 2 -->
-            <div class="services-grid-item">
-            <img class="services-icons" src="repair-icons/diagnostic icon.png" alt="Dianostic Icon">
-              <p><span class="standouts">Fair and reasonably priced</span> labor and replacement parts.</p>
+            <div class="col-md-4 text-center p-3 ">
+              <a href="https://www.pennfishing.com/" target="_blank">
+                <img src="images/logos/penn_150.png" alt="Fishermans Warehouse Logo" class="img-fluid">
+              </a>
             </div>
-            <!-- Service 3 -->
-            <div class="services-grid-item">
-              <img class="services-icons" src="repair-icons/repair-outline-icon.png" alt="Repair Icon">
-              <p>We have you covered, specializing in working with <span class="standouts">Fresh and Salt water</span> reels.</p>
-            </div>
-            <div class="services-grid-item">
-              <img class="services-icons" src="repair-icons/job-complete-icon.png" alt="Post Repair Icon">
-              <p>You can trust us to get your reels fixed and back in your hands. Typical turn around time is <span class="standouts">5 &#8212; 7 business days &plus; shipping time.</span> </p>
+            <div class="col-md-4 text-center py-3">
+              <a href="https://www.abugarcia.com/" target="_blank">
+                <img src="images/logos/abu_garcia_175.png" alt="Fishermans Warehouse Logo" class="img-fluid">
+              </a>
             </div>
           </div>
-          <div class="services-reel-diagram">
-            <div class="services-reel-item">
-              <img class="top-spin-reel-diagram" src="images/top-spin-fishing-reel.JPG" alt="Top Spin Fishing reel">
+          <div class="row">
+            <div class="col-md-4 text-center py-3">
+              <a href="https://www.pfluegerfishing.com/" target="_blank">
+                <img src="images/logos/pflueger_250.jpg" alt="Fishermans Warehouse Logo" class="img-fluid">
+              </a>
             </div>
-            <div class="services-reel-item">
-              <img class="casting-reel-diagram" src="images/casting-fishing-reel.JPG" alt="casting fishing reel">
+            <div class="col-md-4 text-center p-3">
+              <a href="https://www.kokaneemart.com/" target="_blank">
+                <img src="images/logos/kokanee_fishing_250.jpg" alt="Fishermans Warehouse Logo" class="img-fluid">
+              </a>
             </div>
+            <div class="col-md-4 text-center py-3">
+              <a href="https://www.purefishing.com/shakespeare" target="_blank">
+                <img src="images/logos/shakespeare_250.jpg" alt="Fishermans Warehouse Logo" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Toggle Button -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="d-grid gap-2 pt-4">
+          <input type="button" value="Contact Form" id="contact-frm-btn" class="btn btn-lg btn-danger text-white">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-grid gap-2 pt-4">
+          <input type="button" value="Leave A Review..." id="review-frm-btn" class="btn btn-lg btn-success text-white opacity-25">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form Area -->
+  <section id="contact" class="contact py-5">
+    <div class="container">
+      <div class="row">
+        <div id="contact-form" class="col-md-6">
+          <form action="https://formsubmit.co/thereeldr@yahoo.com" method="POST">
+            <div class="mb-4">
+              <input type="text" name="name" class="form-control text-bg-secondary" placeholder="Enter name" required>
+            </div>
+            <div class="mb-4">
+              <input type="email" name="email" class="form-control text-bg-secondary" placeholder="Enter email" required>
+              <input type="hidden" name="_next" value="https://thereeldr.com/pages/thank-you.html">
+              <input type="hidden" name="_subject" value="New Contact Form Submission!">
+              <input type="hidden" name="_template" value="table">
+            </div>
+            <div class="mb-4">
+              <input type="text" name="phone" class="form-control text-bg-secondary" placeholder="Enter phone number">
+            </div>
+            <div class="mb-4">
+              <select name="interested" id="interested" class="form-control text-bg-secondary" required>
+                <option>Interested In...</option>
+                <option value="cleaning">Cleaning</option>
+                <option value="service">Service</option>
+                <option value="repair">Repair</option>
+                <option value="custom">Custom Request</option>
+              </select>
+            </div>
+            <div class="mb-4 form-check">
+              <input type="checkbox" name="checkbox" id="agree-check" required>
+              <label for="agree-check" class="form-check-label">
+                I understand the <a data-bs-toggle="modal"
+                data-bs-target="#modalterms" class="text-primary pointer">
+                  Terms and Conditions
+                </a>.
+              </label>
+            </div>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-lg btn-primary text-white">
+                  Send
+                </button>
+            </div>
+          </form>
+        </div>
+        <div class="d-none d-md-block col-md-6 ps-3">
+          <h2 class="fw-bold">Get More Information</h2>
+          <hr class="hr-heading">
+          <p class="lead">
+            We provide fast and reliable Reel solutions so you can quickly get back to calling out, "Fish On"
+          </p>
+          <ul class="list-unstyled lh-lg">
+            <li class="d-flex align-items-center">
+              <i class="fas fa-check text-primary mx-3"></i>
+              <div>
+                <strong>Customized Solutions: </strong> Our repairs are designed
+                to meet your specific fishing needs, ensuring maximum efficiency
+                in any environment.
+              </div>
+            </li>
+            <li class="d-flex align-items-center">
+              <i class="fas fa-check text-primary mx-3"></i>
+              <div>
+                <strong>Seamless Reliability:</strong> We seamlessly integrate our
+                servcies with your reels, minimizing disruptions and
+                optimizing functionality.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Review Form Area -->
+<section id="review" class="contact py-5 d-none">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="fw-bold">Please leave a review.</h2>
+        <hr class="hr-heading">
+        <p class="lead">
+          We take pride in our work and want to hear from you. Please let us know how we did.
+        </p>
+        <ul class="list-unstyled lh-lg">
+          <li class="d-flex align-items-center">
+            <i class="fas fa-check text-primary mx-3"></i>
+            <div>
+              <strong>Future Discount: </strong> Include your reciept number and if we feature your review receive 10% off your next service!
+            </div>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="fas fa-check text-primary mx-3"></i>
+            <div>
+              <strong>Got Suggestions:</strong> Great, We'd love to hear how we can be and do better!
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="review-form" class="col-md-6"></div>
+    </div>
+  </div>
+</section>
+
+  <!-- Terms and Conditions Modal -->
+  <div class="terms-modal">
+    <!-- Modal 1 -->
+    <div id="modalterms" class="modal fade">
+      <div class="modal-dialog modal-lg mt-7">
+        <div class="modal-content text-bg-info p-5">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="images/logos/Logo(trademark).jpg" alt="TRD Logo" class="img-fluid">
+            </div>
+            <div class="col-md-7">
+              <h3 class="text-secondary">Terms and Conditions</h3>
+              <p>Cleaning, service and repairs includes a complete teardown to frame, then all parts are cleaned and lubricated as your reel is rebuilt.</p>
+              <p>&lowast; Includes base service time up to 2 hours.</p>
+              <p>&lowast; Additional service time up to $25 per hour.</p>
+              <p>&lowast; Plus the cost of parts and &frasl; or upgraded parts.</p>
+              <p>&lowast; Plus the cost of shipping if applicable.</p>
+              <p>&lowast; All custom requests require envoiced approval.</p>
+              <!-- <a href="/index.html#contact" class="btn btn-primary text-white">
+                Inquire
+              </a> -->
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews -->
+  <section id="reviews" class="reviews my-5 position-relative">
+    <div class="container position-relative overflow-auto">
+      <div class="row mb-2">
+        <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center pt-4">
+          <h2><span class="badge bg-primary text-uppercase">Customer Reviews</span></h2>
+          <h3 class="fw-bold text-white">
+            What our Clients Say ...
+          </h3>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-12">
+          <div id="quotes-carousel" class="carousel slide text-white" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <blockquote class="text-center rounded-3">
+                  <q>The reel doctor has worked on my reels and I have always been impressed. From maintenance to cleaning  that leaves my reels back to it original state if not better. Anytime I have issues with my Reels he's the first person I take my reels too.</q>
+                  <p class="text-end"><span class="fw-bold text-secondary text-uppercase py-2 fs-3 q-name">Jeremiah Sandoval</span> <br> <span class="small text-warning">Greater Sacramento Area, Ca.</span></p>
+                </blockquote>
+              </div>
+              <div class="carousel-item overflow-auto">
+                <blockquote class="text-center rounded-3">
+                  <q>The reel doctor is a reel professional. Fast and friendly at an unbeatable price. Highly recommend you take all your reels to him for service and repairs.</q>
+                  <p class="text-end"><span class="fw-bold text-secondary text-uppercase py-2 fs-3 q-name">Peter Yang</span> <br> <span class="small text-warning">Rancho Cordova, Ca.</span></p>
+                </blockquote>
+              </div>
+              <div class="carousel-item overflow-auto">
+                <blockquote class="text-center rounded-3">
+                  <q>The Reel Dr. Is the best and fastest reel repair I have ever dealt with. Top notch customer service and always a speedy return. I recommend this company to anyone in need of reel repair!</q>
+                  <p class="text-end"><span class="fw-bold text-secondary text-uppercase py-2 fs-3 q-name">Justin Lewis</span> <br> <span class="small text-warning">Sacramento, Ca.</span></p>
+                </blockquote>
+              </div>
+              <div class="carousel-item">
+                <blockquote class="text-center rounded-3 overflow-auto">
+                  <q>I recently used The Reel Dr. for fishing reel cleaning, service, and repair, and I’m highly satisfied with their expertise. They returned my reel in top-notch condition, and the communication throughout the process was excellent. The quick turnaround and attention to detail make them a reliable choice for anglers seeking quality reel maintenance.</q>
+                  <p class="text-end"><span class="fw-bold text-secondary text-uppercase py-2 fs-3 q-name">Tim Rickett</span> <br> <span class="small text-warning">Orangevale, Ca</span></p>
+                </blockquote>
+              </div>
+              <div class="carousel-item">
+                <blockquote class="text-center rounded-3">
+                  <q>Ron is a standup guy and has worked on many reels for me over the years. His prices are very reasonable and his turnaround time is always quick. He’s saved a few reels of mine that I thought were destined for the trash. He’s also supplied me with parts and assisted with warranty service for reels that were still covered. I will not take my reels anywhere else. Highly recommend and will be a customer for life.</q>
+                  <p class="text-end"><span class="fw-bold text-secondary text-uppercase py-2 fs-3 q-name">Nick Fissel</span> <br> <span class="small text-warning">Roseville, Ca.</span></p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Descriptions -->
+  <section id="services" class="services py-4">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
+          <h2><span class="badge bg-primary text-uppercase">Services</span></h2>
+          <h2 class="fw-bold">
+            The Dr. Provides Accelerated Reel Solutions
+          </h2>
+          <small>Click each card for more details</small>
+        </div>
+      </div>
+
+      <!-- Services Row 1 -->
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="card text-bg-info">
+            <a 
+              data-bs-toggle="modal"
+              data-bs-target="#modal1"
+            >
+            <img src="images/services/cleaning.jpeg" alt="" class="card-img-top">
+            <div class="card-body">
+              <p>
+                <span class="fw-bold text-secondary">Cleaning</span> - Creating an optimal environment for all components
+              </p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="card text-bg-info">
+            <a 
+              data-bs-toggle="modal"
+              data-bs-target="#modal2"
+            >
+            <img src="images/services/maintanence.jpeg" alt="" class="card-img-top">
+            <div class="card-body">
+              <p>
+                <span class="fw-bold text-secondary">Maintanence</span> - Replacing components due to wear & tear 
+              </p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="card text-bg-info">
+            <a 
+              data-bs-toggle="modal"
+              data-bs-target="#modal3"
+            >
+            <img src="images/services/repair_1.jpeg" alt="" class="card-img-top">
+            <div class="card-body">
+              <p>
+                <span class="fw-bold text-secondary">Repairs</span> - Repairing or replacing broken & damaged components
+              </p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="card text-bg-info">
+            <a 
+              data-bs-toggle="modal"
+              data-bs-target="#modal4"
+            >
+            <img src="images/services/custom_1.jpeg" alt="" class="card-img-top">
+            <div class="card-body">
+              <p>
+                <span class="fw-bold text-secondary">Customized</span> - Repair or Fabricate hard to find components
+              </p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Modals -->
+  <div class="services-modals">
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal fade">
+      <div class="modal-dialog modal-lg mt-7">
+        <div class="modal-content text-bg-info p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/services/cleaning_2.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-secondary">Cleaning</h3>
+              <p>
+                Keeping the internal moving parts of your reel clean and lubed 
+                ensures longer last parts. That means you spend less and take 
+                more time fishing.
+              </p>
+              <p>
+                So creating an optimal environment for all your components is 
+                essential.
+              </p>
+              <!-- <a href="/index.html#contact" class="btn btn-primary text-white">
+                Inquire
+              </a> -->
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal fade">
+      <div class="modal-dialog modal-lg mt-7">
+        <div class="modal-content text-bg-info p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/services/maintanence_2.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-secondary">Maintenance</h3>
+              <p>
+                Sometimes, cleaning isn't enough and after a cleaning we may find
+                that some but not of your components new replacing or extra 
+                attention.
+              </p>
+              <p>
+                In this case, we are able to replace components due to wear and tear
+                from the elements.
+              </p>
+              <!-- <a href="#contact" class="btn btn-primary text-white">
+                Inquire
+              </a> -->
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal fade">
+      <div class="modal-dialog modal-lg mt-7">
+        <div class="modal-content text-bg-info p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/services/repair_2.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-secondary">Repairs</h3>
+              <p>
+                Repairs are needs due to lack of cleaning and maintanence. If your 
+                last fishing adventure resulted in some damage to the housing or 
+                internal components, we have you covered.
+              </p>
+              <p>
+                Repairing and or replacing broken and damaged components takes time
+                and patience.
+              </p>
+              <!-- <a href="#contact" class="btn btn-primary text-white">
+                Inquire
+              </a> -->
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal fade">
+      <div class="modal-dialog modal-lg mt-7">
+        <div class="modal-content text-bg-info p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/services/custom_2.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-secondary">Customized Repairs</h3>
+              <p>
+                Even if you've done all you need, cleaning, maintenance, and repairs. 
+                Sometimes, we find not all components are available for replacement and
+                that's where we shine.
+              </p>
+              <p>
+                The Reel Dr. specializes in customized repairs to keep your favorite
+                reel working optimally.
+              </p>
+              <!-- <a href="#contact" class="btn btn-primary text-white">
+                Inquire
+              </a> -->
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Details 1 -->
+    <section id="details" class="details py-4 position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Teardown & Inspection</h2>
+            <hr class="hr-heading">
+            <p>
+              We offer comprehensive evaluation and inspection services to ensure a smooth and successful experience of our Reel repair solutions.
+            </p>
+            <ul class="list-unstyled lh-lg">
+              <li class="d-flex align-items-center">
+                <i class="fas fa-check text-secondary mx-3"></i>
+                <div>
+                  <strong>Customized solutions: </strong> We tailor our repairs to align with your unique fishing adventures
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="fas fa-check text-secondary mx-3"></i>
+                <div>
+                  <strong>Seamless Repair Process:</strong> Our team ensures smooth diagnostic and repair process so you can feel confident that you will receive your reels back better than before
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <img src="images/decorations/casting-fishing-reel.JPG" alt="Small Reel Geer" class="img-fluid rounded-3">
+          </div>
+        </div>
+      </div>
+      <img src="images/decorations/vertical-decoration-left.svg" alt="decoration on left" class="vertical-decoration position-absolute d-none d-md-block">
+    </section>
+
+    <!-- Details 2 -->
+    <section class="details-2 my-4 position-relative">
+      <div class="container">
+        <div class="row pt-2">
+          <div class="col-lg-6 text-center">
+            <img src="images/decorations/top-spin-fishing-reel.JPG" alt="Open Reel Housing" class="img-fluid rounded-3">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bold pt-3">Maintenance & Support</h2>
+            <hr class="hr-heading">
+            <p>
+              We provide comprehensive maintenance and support services to ensure your reels function smoothly and uninterrupted on your next fishing trip.
+            </p>
+            <ul class="list-unstyled lh-lg">
+              <li class="d-flex align-items-center">
+                <i class="fas fa-check text-primary mx-3"></i>
+                <div>
+                  <strong>Proactive Maintenance:</strong> We proactively evaluate your specific reel type and fishing preferance, no matter if you enjoy fresh salt water fishing in order to prevent issues and optimize reel performance.
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="fas fa-check text-primary mx-3"></i>
+                <div>
+                  <strong>Timely Updates:</strong> We ensure your kept up to date with your repair and when we will deliver it back to you.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="images/decorations/vertical-decoration-right.svg" alt="" class="vertical-decoration position-absolute d-none d-md-block">
+    </section>
+
+    <!-- Expertise -->
+    <section id="expertise" class="expertise text-bg-info py-4">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
+            <h2>
+              <span class="badge bg-primary rounded-3 text-uppercase">
+                Expertise
+              </span>
+            </h2>
+            <h2 class="fw-bold text-secondary">What Makes Us Different?</h2>
+            <p>
+              We take pride in our expertise. With over 20 years of experience as a fishman and Reel Maintanence and Repair professional, The Dr. delivers exceptional service tailored to
+              your needs. Our strong points include:
+            </p>
+          </div>
+        </div>
+        <!-- Expertise Row 1 -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card text-bg-info border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-lightbulb fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Flexible Services</h4>
+                <p>
+                  Maintanence or Repair based on Honest diagnosis
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card text-bg-info border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-glasses fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Diagnosis</h4>
+                <p>
+                  After teardown and inspection, we provide recommendations
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card text-bg-info border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-desktop fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Easy To Use</h4>
+                <p>
+                  Get in contact via our <a href="#contact-frm-btn" class="contact-frm-link">Contact Form</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card text-bg-info border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-cog fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Custom Options</h4>
+                <p>
+                  Have a sentimental Reel, we handle with care.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section class="video py-4">
+      <div class="container">
+        <h2 class="text-center">
+          <span class="badge bg-primary rounded-3 text-uppercase">
+            Reel Cleaning Process
+          </span>
+        </h2>
+        <div class="row">
+          <div class="col-12 d-flex flex-column align-items-center">
+            <div class="position-relative">
+              <img src="images/thumbnails/Logo(trademark).jpg" alt="Video Preview Image" class="img-fluid">
+              <a 
+                class="video-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#videoModal"
+                data-bs-src="https://www.youtube.com/embed/Lp4gavsbwHg?si=WKvx5FSDPMv-UZno"
+              >
+              <span class="video-play-button">
+                <span></span>
+              </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row video-points px-md-6 mt-5">
+          <div class="col-md-4">
+            <h4 class="fw-bold">20 Years of Experience</h4>
+            <p>
+              With over 20 years of experience, I have gained valuable insights and expertise to deliver high-quality Fishing Reel Solutions.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4 class="fw-bold">Our Partnerships</h4>
+            <p>
+              I believe in building enduring partnerships with our clients and partners. We
+              establish long-term relationships based on trust
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4 class="fw-bold">Skilled Repairman</h4>
+            <p>
+              I am a skilled repairman and a capable professional who is passionate about all things Fishing related and want to deliver excellence
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video-modal">
+        <div id="videoModal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="ratio ratio-16x9">
+                <iframe frameborder="0" class="embed-responsive-item" id="video"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing py-4 position-relative">
+      <div class="container position-relative">
+        <div class="row mb-4">
+          <div class="col-md-6 offset-md-3 d-flex flex-column align-items center text-center">
+            <h2 class="mt-4">
+              <span class="badge bg-primary rounded-3 text-uppercase">
+                Pricing
+              </span>
+            </h2>
+            <h2 class="fw-bold text-secondary">
+              Flexible Pricing Options
+            </h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Pricing Col 1 -->
+          <div class="col-md-4 mb-5">
+            <div class="card text-bg-info text-center rounded-0">
+              <div class="card-body">
+                <div class="xl-text fw-bold">$40&#42; <span class="fs-6">&#47;reel</span></div>
+                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
+                  Freshwater
+                </h4>
+                <p>
+                  Our freshwater pricing indcludes:
+                </p>
+                <ul class="list-unstyled lh-lg mt-5">
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Teardown
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Diagnosis
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Recommended Repairs & Upgrades
+                  </li>
+                </ul>
+                <p class="small">
+                  &#42; Subject to <a data-bs-toggle="modal"
+                  data-bs-target="#modalterms" class="text-primary pointer">
+                    Terms and Conditions
+                  </a>
+                </p>
+                <a href="#contact-frm-btn" class="btn btn-primary text-white mt-6 fw-bold inquire">
+                  Inquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing Col 2 -->
+          <div class="col-md-4 mb-5">
+            <div class="card text-bg-info text-center rounded-0">
+              <div class="card-body">
+                <div class="xl-text fw-bold">$50&#x2A; <span class="fs-6">&#47;reel</span></div>
+                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
+                  Saltwater
+                </h4>
+                <p>
+                  Our Saltwart pricing includes:
+                </p>
+                <ul class="list-unstyled lh-lg mt-5">
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Teardown 
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Diagnosis
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Additional cleaning from Saltwater wear and tear
+                  </li>
+                </ul>
+                <p class="small">
+                  &#x2A; Subject to <a data-bs-toggle="modal"
+                  data-bs-target="#modalterms" class="text-primary pointer">
+                    Terms and Conditions
+                  </a>
+                </p>
+                <a href="#contact-frm-btn" class="btn btn-primary text-white mt-6 fw-bold inquire">
+                  Inquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing Col 3 -->
+          <div class="col-md-4 mb-5">
+            <div class="card text-bg-info text-center rounded-0 mb-4">
+              <div class="card-body">
+                <div class="xl-text fw-bold">$TBD&ast;</div>
+                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
+                  Plus Parts
+                </h4>
+                <p>
+                  We source our parts from:
+                </p>
+                <ul class="list-unstyled lh-lg mt-5">
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Our own inventory
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Perferred Vendors
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    Even Hard to find parts
+                  </li>
+                  <li class="text-uppercase fs-5 fw-bold">
+                    &ast;Custom Modification
+                  </li>
+                </ul>
+                <p class="small">
+                  &ast; Subject to <a data-bs-toggle="modal"
+                  data-bs-target="#modalterms" class="text-primary pointer">
+                    Terms and Conditions
+                  </a>
+                </p>
+                <a href="#contact-frm-btn" class="btn btn-primary text-white mt-6 fw-bold inquire">
+                  Inquire
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects my-4">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
+            <h2>
+              <span class="badge bg-primary rounded-3 text-uppercase">
+                Projects
+              </span>
+            </h2>
+            <h2 class="fw-bold">Project's We are Proud Of</h2>
+            <p>
+              We take pride in our successful projects and the value they bring to
+              our fellow fisherman. With our expertise and dedication, we have delivered
+              exceptional results. Here are some highlights
+            </p>
+          </div>
+        </div>
+        <div class="container d-flex overflow-hidden">
+              <div class="panel active" style="background-image: url('./images/project_highlights/project_before_after.jpg');">
+                <!-- <h3 class="text-bg-secondary fw-bold rounded-3 px-2">Casting Reel</h3> -->
+              </div>
+
+              <div class="panel" style="background-image: url('./images/project_highlights/project_in_action.jpeg');">
+                <!-- <h3 class="text-bg-secondary fw-bold rounded-3 px-2">Better Casting Reel</h3> -->
+              </div>
+
+              <div class="panel" style="background-image: url('./images/project_highlights/project_gear_cleaning.jpeg');">
+                <!-- <h3 class="text-bg-secondary fw-bold rounded-3 px-2">Gear Cleaning</h3> -->
+              </div>
+          
+              <div class="panel" style="background-image: url('./images/project_highlights/rebuild.jpeg');">
+                <!-- <h3 class="text-bg-secondary fw-bold rounded-3 px-2">Rebuild Phase</h3> -->
+              </div>
+          
+              <div class="panel" style="background-image: url('./images/project_highlights/complete.jpeg');">
+                <!-- <h3 class="text-bg-secondary fw-bold rounded-3 px-2">Lubed Gears</h3> -->
+              </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-bg-info py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 d-flex justify-content-center my-3">
+            <img src="./images/profile/trd-trophies.jpg" alt="The Reel Dr. Himself" id="trd" class="img-fluid rounded-3">
+          </div>
+          <div class="col-md-4 my-3">
+            <h6 class="text-secondary fw-bold">About The Reel Dr.</h6>
+            <p class="lead">
+              Established in 1991, I started this business after taking my reels to a local fishing store to get serviced, they would work great for a few hours and then I'd experience the same issues. So, I decided I would learn how to do it myself and have been working on reels ever since. Fishing is in my blood!
+            </p>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="mb-3">
+              <h6 class="text-secondary fw-bold">Social & Email Contact</h6>
+              <a href="https://www.facebook.com/thereeldr" class="text-decoration-none" target="_blank">
+                <i class="fab fa-facebook fa-3x text-light mx-2"></i>
+              </a>
+              <!-- <a href="https://twitter.com" class="text-decoration-none" target="_blank">
+                <i class="fab fa-twitter fa-3x text-light mx-2"></i>
+              </a> -->
+              <a href="https://www.instagram.com/imjmbnd007/" class="text-decoration-none" target="_blank">
+                <i class="fab fa-instagram fa-3x text-light mx-2"></i>
+              </a>
+            </div>
+            <p>
+              We would love to hear from you
+            </p>
+            <p>
+              <span class="pe-2"><i class="fa-regular fa-envelope"></i>
+              </span> <a href="mailto:thereeldr@yahoo.com"
+              ><strong>thereeldr@yahoo.com</strong></a
+              >
+            </p>
+            <p class="mb-5">
+              <span class="pe-2"><i class="fa-regular fa-phone"></i>
+              </span> <a href="tel:9163507116">&#40;916&#41; 350 - 7116</a>
+            </p>
+
+            <h6 class="text-secondary fw-bold">Other Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                Important: <a data-bs-toggle="modal"
+                data-bs-target="#modalterms" class="text-primary pointer">
+                  Terms and Conditions
+                </a>,
+                <a href="pages/privacy.html">Privacy Policy</a>
+              </li>
+              <li>
+                Useful: <a href="index.html#expertise">Expertise</a>, <a href="index.html#pricing">Pricing</a>
+              </li>
+              <li>
+                Menu: <a href="index.html">Home</a>, <a href="index.html#details">Details</a>,
+                <a href="index.html#services">Services</a>,
+                <a href="index.html#projects">Projects</a>
+              </li>
+            </ul>
             
           </div>
-      </section>
 
-      <section class="contact-section section-accent">
-        <h2 class="contact-section-title contact-us-link"><a href="#contact">Contact Us Now</a></h2>
-        <p class="contact-us-now-sub-title"><span class="standouts-italics">&ldquo;Our goal is to get your reel to its best possible condition, so it works correctly when its being used. There is nothing worse than loosing a fish due to faulty equipment!&rdquo; &#8212; The Reel Dr.</span></p>
-
-        <div class="portfolio-grid-container">
-            <img src="images/example-1.jpg" alt="example 1">
-            <img src="images/example-2.jpg" alt="example 2">
-            <img src="images/example-2a.JPG" alt="example 2a">
-            <img src="images/example-2b.jpg" alt="example 2b">
-            <img src="images/open-reel-gears.jpg" alt="Open Reel with Gears">
-            <img src="images/gear-in-hand.jpg" alt="Fishing Reel Gear In hand">
-            <img class="rusty-img" src="images/rusty-bearing.jpg" alt="Rusty Bearing">
-            <img class="cleaned-rusty-img" src="images/rusty-bearing-cleaned.jpg" alt="Rusty Bearing Cleaned">
-            <img class="blurred-bearing" src="images/blurred-bearing.jpg" alt="Blurred bearing Pic"> 
-            <!--  class="tall" class="wide"           -->
-        </div>
-
-      </section>
-
-      <section class="section">
-        <h2 class="section-pricing section-grey-accent">Pricing</h2>
-        <div class="pricing-grid">
-            <div class="pricing-grid-item">
-                <h3 class="section-pricing section-accent">Fresh Water Reels</h3>
-                <img class="column" src="price-icons/Freshwater-reel.jpg" alt="A cool ass pic of a fishing reel.">
-                    <p class="fresh-water">&#36;40 + Parts &lowast;</p>
-            </div>
-            <div class="pricing-grid-item">
-                <h3 class="section-pricing section-accent">Salt Water Reels</h3>
-                <img class="casting-reel" src="price-icons/Saltwater-reel.jpg" alt="Another dope ass fishing reel pic.">
-                    <p class="salt-water">&#36;50 + Parts &lowast;</p>
-            </div>
-        </div>
-            <div id="about"  class="added-cost">
-                <p>Cleaning, service and repairs includes a complete teardown to frame, then all parts are cleaned and lubricated as your reel is rebuilt.</p>
-                <p>&lowast; Plus the cost of parts and &frasl; or upgraded parts.</p>
-                <p>&lowast; Plus the cost of shipping if applicable.</p>
-            </div>
-      </section>
-
-      <section class="about-section">
-        <h2 class="about-section-title">Meet the Team</h2>
-        <div class="about-us-grid">
-          <!-- Ron / The Reel Dr.  -->
-          <div class="about-grid-item">
-            <img class="trd-profile-pic" src="thereeldr-pics/trd-trophies.jpg" alt="The Reel Dr. Pic">
-              <p>I'm Ron, The Reel Dr. - Established in 1991, I started this business after taking my reels to a local fishing store to get serviced, they would work great for a few hours and then I'd experience the same issues. So, I decided I would learn how to do it myself and have been working on reels ever since. Fishing is in my blood!</p>
-          </div>
-          <!-- Matt / Chuker -->
-          <div id="contact" class="about-grid-item">
-            <img class="bald-guy-img" src="thereeldr-pics/bald-guy.jpg" alt="The Bald Guy Pic">
-              <p>I'm Matt and I've spent the last ten years as a diesel mechanic and love tinkering and fixing things. Recently, I needed to pivot out of heavy mechanics and partnered with The Reel Dr. to develope this website and fix fishing reels.</p>
-          </div>
-        </div>
-      </section>
-       
-      <section class="form-section">
-        <h2 class="section-title">Contact</h2>
-        <form class="form" action="https://formsubmit.co/thereeldr@yahoo.com" method="POST">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required>
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" required>
-          <input type="hidden" name="_next" value="https://thereeldr.com/pages/thank-you.html">
-          <input type="hidden" name="_template" value="table">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" required></textarea>
-          <div class="btn-container">
-            <button class="btn btn-square" type="submit">Send</button>
-          </div>
-        </form>
-      </section>
-    </main>
-    <footer>
-        <div class="footer-container">
-          <img class="footer-logo hidden" src="images/Revised-logo.jpg" alt="The Reel Dr. Logo">
-          <p class="footer-closer">&copy;2022 The Reel Dr.</p> <p class="hidden">Website by: Matthew Higgins</p>
       </div>
-      </footer>
+     </footer>
+
+  <button id="to-top" class="to-top-btn">
+    <img src="images/decorations/up-arrow.png" alt="Up Arrow Decoration">
+  </button>
 </body>
 </html>
