@@ -54,7 +54,6 @@ function insertForm() {
           <button type="submit" class="btn btn-lg btn-primary text-white">
             Submit
           </button>
-          <input type="submit" value="Submit" class="btn btn-lg btn-primary text-white">
         </div>
       </form>
     `;
