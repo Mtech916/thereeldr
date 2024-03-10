@@ -166,22 +166,14 @@
               <input type="email" name="email" class="form-control text-bg-secondary" placeholder="Enter email" required>
               <input type="hidden" name="_next" value="https://thereeldr.com/pages/thank-you.html">
               <input type="hidden" name="_subject" value="New Contact Form Submission!">
+              <input type="hidden" name="_autoresponse" value="Thank you for submitting a Contact Request. We've received your message and will contact you within 24 business hours.">
               <input type="hidden" name="_template" value="table">
             </div>
             <div class="mb-4">
-              <input type="text" name="phone" class="form-control text-bg-secondary" placeholder="Enter phone number" required>
-            </div>
-            <div class="mb-4">
-              <select name="message" id="interested" class="form-control text-bg-secondary" required>
-                <option>Interested In...</option>
-                <option value="cleaning">Cleaning</option>
-                <option value="service">Service</option>
-                <option value="repair">Repair</option>
-                <option value="custom">Custom Request</option>
-              </select>
+              <textarea name="message" id="message" class="form-control text-bg-secondary" rows="10" placeholder="Please Include: Phone Number and indicate if you are interested in Cleaning, Service, Repair, or Custom Repair" required></textarea>
             </div>
             <div class="mb-4 form-check">
-              <input type="checkbox" name="checkbox" id="agree-check" required>
+              <input type="checkbox" name="checkbox" id="agree-check">
               <label for="agree-check" class="form-check-label">
                 I understand the <a data-bs-toggle="modal"
                 data-bs-target="#modalterms" class="text-primary pointer">

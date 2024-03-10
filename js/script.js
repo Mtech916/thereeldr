@@ -43,10 +43,8 @@ function insertForm() {
           <input type="email" name="email" class="form-control text-bg-secondary" placeholder="Enter email" required>
           <input type="hidden" name="_next" value="https://thereeldr.com/pages/thank-you.html">
           <input type="hidden" name="_subject" value="New Contact Form Submission!">
+          <input type="hidden" name="_autoresponse" value="Thank you for submitting a Review. We've received your message and will contact you within 24 business hours.">
           <input type="hidden" name="_template" value="table">
-        </div>
-        <div class="mb-4">
-          <input type="text" name="reciept" class="form-control text-bg-secondary" placeholder="Enter Reciept Number" required>
         </div>
         <textarea name="message" id="message" class="form-control text-bg-secondary" rows="10" placeholder="Enter your review here..." required></textarea>
         <div class="d-grid gap-2 pt-4">
